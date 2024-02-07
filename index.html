@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="src/sass/main.scss">
   <script defer src="https://kit.fontawesome.com/9393d0e112.js" crossorigin="anonymous"></script>
 
@@ -13,6 +18,7 @@
 <body>
 
   <header class="header">
+
     <div class="container">
       <nav class="nav">
 
@@ -26,45 +32,59 @@
             <a class="nav__link" href="#">About Us</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Team</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Services</a>
-          </li>
-          <li class="nav__item">
             <a class="nav__link" href="#">Process</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Team</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Clients</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Work</a>
+            <a class="nav__link" href="#">Contact</a>
           </li>
         </ul>
 
         <button class="nav__search"><i class="fa-solid fa-magnifying-glass"></i></button>
 
         <a class="nav__social" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
       </nav>
+    </div>
 
-      <section class="hero">
+    <div class="container">
+      <div class="hero">
         <div class="hero__text-container">
           <h2 class="hero__text hero__text--big">Think</h2>
           <h2 class="hero__text hero__text--big">Outside</h2>
           <h2 class="hero__text hero__text--small">of the box</h2>
 
-          <button class="hero__btn">Read More</button>
+          <button class="btn--white">Read More</button>
         </div>
 
         <img class="hero__img" src="src/img/skater.png" alt="image of a skater on skateboard">
-
-      </section>
-
+      </div>
     </div>
+
+
   </header>
 
+  <section class="about">
+    <div class="container">
+      <div class="grid__2col">
+        <div class="about__text">
+          <h2 class="about__title">Who we are</h2>
+          <p class="about__para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga commodi, qui repudiandae
+            assumenda quas eos harum nemo, incidunt sequi dolorum quis. Omnis modi laborum officia?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, itaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto dignissimos perspiciatis eos vel repellat.
+          </p>
+          <button class="btn--red">Read More</button>
+        </div>
 
+        <img class="about__img" src="src/img/laptop.png" alt="picture of laptop showing people at a table">
+      </div>
+    </div>
+  </section>
 
 
 
