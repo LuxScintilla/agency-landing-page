@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: linear-gradient(#bc2e3acc, #bc2e3acc), url("city-bg.246b9be6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  color: #f5f5f5;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  display: flex;
+}
+
+.nav__logo {
+  margin-right: auto;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.nav__list {
+  gap: 2rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav__link {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.hero__text-container {
+  flex-direction: column;
+  align-items: center;
+  max-width: 48rem;
+  display: flex;
+}
+
+.hero__text {
+  text-transform: uppercase;
+}
+
+.hero__text--big {
+  font-size: 10rem;
+}
+
+.hero__text--small {
+  margin-bottom: 2rem;
+  font-size: 6rem;
+}
+
+.hero__img {
+  max-width: 56rem;
+  position: absolute;
+  top: 3.2rem;
+  right: 0;
+}
+
+/*# sourceMappingURL=index.f7626f62.css.map */
