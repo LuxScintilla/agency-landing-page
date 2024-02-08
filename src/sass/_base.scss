@@ -4,6 +4,7 @@ $color-bg-light: #f5f5f5;
 $color-bg-dark: #dddddd;
 
 $color-text-light: #f5f5f5;
+$color-text-mediumlight: #555555;
 $color-text-medium: #454545;
 $color-text-dark: #2e2e2e;
 
@@ -27,6 +28,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.4rem;
   color: $color-text-dark;
+  overflow-x: hidden;
 }
 
 .container {
@@ -52,6 +54,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
     z-index: 1;
+  }
+
+  &__4col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
   }
 }
 

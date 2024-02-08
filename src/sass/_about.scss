@@ -19,7 +19,7 @@
   &__para {
     line-height: 2rem;
     margin-bottom: 4rem;
-    color: $color-text-medium;
+    color: $color-text-mediumlight;
   }
 
   &__img {
@@ -38,9 +38,10 @@
     position: absolute;
     top: 50%;
     left: 0;
+    transform: translate(0, -50%);
     height: 24rem;
     width: 24rem;
-    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(0 0, 0% 100%, 50% 50%);
     background-color: $color-red;
     z-index: 0;
   }
@@ -66,6 +67,7 @@
 
   &__para {
     align-self: flex-start;
+    color: $color-text-mediumlight;
   }
 
   &__icon {
