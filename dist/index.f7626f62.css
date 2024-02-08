@@ -13,9 +13,9 @@ html {
 }
 
 body {
-  color: #171717;
+  color: #2e2e2e;
   font-family: Lato, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .container {
@@ -33,6 +33,13 @@ body {
   gap: 2rem;
   display: grid;
   position: relative;
+}
+
+.grid__3col {
+  z-index: 1;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  display: grid;
 }
 
 .btn--white, .btn--red {
@@ -63,6 +70,7 @@ body {
 
 .nav {
   color: #f5f5f5;
+  text-shadow: 0 0 2px #000;
   align-items: center;
   gap: 2rem;
   padding: 2rem 0;
@@ -70,6 +78,7 @@ body {
 }
 
 .nav__logo {
+  text-shadow: 0 0 4px #000;
   margin-right: auto;
   font-size: 2.8rem;
   font-weight: 700;
@@ -111,10 +120,10 @@ body {
 
 .hero__text {
   text-transform: uppercase;
-  color: #fff;
+  color: #fffc;
   text-shadow: 0 0 8px #000;
-  mix-blend-mode: soft-light;
-  filter: brightness(180%);
+  mix-blend-mode: hard-light;
+  filter: drop-shadow(0 0 6px #0009);
   font-weight: 900;
 }
 
@@ -131,6 +140,7 @@ body {
 
 .hero__img {
   z-index: 1;
+  filter: drop-shadow(0 0 8px #0009);
   max-width: 50rem;
   position: absolute;
   top: 2rem;
@@ -138,6 +148,7 @@ body {
 }
 
 .about {
+  background-color: #f5f5f5;
   padding: 8rem 0;
   position: relative;
   overflow: hidden;
@@ -155,19 +166,78 @@ body {
   right: 0;
 }
 
-.about__title {
-  margin-bottom: 2rem;
-  font-size: 3.2rem;
-  font-weight: 900;
-}
-
 .about__para {
+  color: #454545;
   margin-bottom: 4rem;
   line-height: 2rem;
 }
 
 .about__img {
+  justify-self: flex-end;
   max-width: 42rem;
+}
+
+.about2 {
+  background-color: #ddd;
+  padding: 8rem 0;
+  position: relative;
+}
+
+.about2:before {
+  content: "";
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  z-index: 0;
+  background-color: #bc2e3a;
+  width: 24rem;
+  height: 24rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.about2__list {
+  margin-top: 4rem;
+  list-style-type: none;
+}
+
+.about2__item {
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+  display: grid;
+}
+
+.about2__item-title {
+  color: #454545;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.about2__para {
+  align-self: flex-start;
+}
+
+.about2__icon {
+  color: #f5f5f5;
+  background-color: #bc2e3a;
+  border-radius: 50%;
+  grid-area: span 2 / 1;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.about2 .section-title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */
